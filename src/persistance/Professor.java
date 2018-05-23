@@ -32,6 +32,10 @@ public class Professor extends Person {
     
     this.photour1 = "/photo/professors/mad/"+photoName;
     }
+
+    public void isSuperViseBy(Student student) {
+        this.students.add(student);
+    }
     
     
 }

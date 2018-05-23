@@ -14,42 +14,36 @@ import java.util.Date;
 public class Student extends Person{
     
     
-    String student_id;
-    String lastname;
-    String firstName;
-    Date dateBirth;
+    String studenId;
+    
 
-    public Student(String n, String p, Date d) {
-        this.lastname = n;
-        this.firstName = p;
-        this.dateBirth = d;
+    public Student(String nom, String prenom, Date dateNissance) {
+        this.lastname = nom;
+        this.firstName = prenom;
+        this.dateBirth = dateNissance;
         
-        this.student_id =createsStudent(n,p,d);
+        this.studenId =createsStudent(nom,prenom,dateNissance);
     }
 
     private String createsStudent(String lname, String fname, Date date) {
-        String end = concate(date);
+        String end = date.getYear() + "-" + date.getMonth();
         return lname.substring(0,3)+fname.substring(0)+end;
         
         
     }
 
-    private String concate(Date date) {
-        return date.getYear()+ "-"+date.getMonth();
+
+    public String getStudenId() {
+        return studenId;
     }
 
-    public String getStudent_id() {
-        return student_id;
+    public void setStudenId(String studenId) {
+        this.studenId = studenId;
     }
 
-    public void setStudent_id(String student_id) {
-        this.student_id = student_id;
+    public void study() {
+        System.out.println("I Study");
     }
     
-    public void isSuperViseBy(Professor professor){
-        professor.students.add(this);
-    
-    
-    }
     
 }

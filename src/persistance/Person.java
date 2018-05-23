@@ -5,15 +5,19 @@
  */
 package persistance;
 
+import java.util.Date;
+
 /**
  *
  * @author 1795162
  */
 public class Person {
     int age;
-    public void study(){
-        System.out.println("I Study");
-    }
+    Date dateBirth;
+    String firstName;
+    String lastname;
+    
+    
     
     
 }
