@@ -3,21 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package persistance;
 
 /**
  *
  * @author 1795162
  */
-public class Main {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-     
-
-
-
+public class Person {
+    int age;
+    public void study(){
+        System.out.println("I Study");
     }
+    
     
 }
