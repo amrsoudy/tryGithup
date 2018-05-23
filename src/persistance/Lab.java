@@ -9,27 +9,10 @@ package persistance;
  *
  * @author 1795162
  */
-public class Lab {
+public class Lab extends ClassRoom {
     
-    String idClass;
-    Integer capacity;
     Integer nbComputers;
 
-    public String getIdClass() {
-        return idClass;
-    }
-
-    public void setIdClass(String idClass) {
-        this.idClass = idClass;
-    }
-
-    public Integer getCapacity() {
-        return capacity;
-    }
-
-    public void setCapacity(Integer capacity) {
-        this.capacity = capacity;
-    }
 
     public Integer getNbComputers() {
         return nbComputers;
