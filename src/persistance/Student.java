@@ -18,9 +18,9 @@ public class Student extends Person{
     
 
     public Student(String nom, String prenom, Date dateNissance) {
-        this.lastname = nom;
-        this.firstName = prenom;
-        this.dateBirth = dateNissance;
+        this.setLastname(prenom); 
+        this.setFirstName(prenom); 
+        this.setDateBirth(dateNissance);
         
         this.studenId =createsStudent(nom,prenom,dateNissance);
     }
